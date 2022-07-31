@@ -32,14 +32,14 @@ const SignupForm = () => {
     }
 
     try {
-      const response = await createUser({
+      const { response } = await createUser({
         variables: {...userFormData}
       });
 
       Auth.login(response.createUser.token);
     } catch (e) {
       console.error(e);
-      setRevealAlert(true);
+      setShowAlert(true);
     }
 
     setUserFormData({
@@ -53,7 +53,7 @@ const SignupForm = () => {
     <>
 
     <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-      <Alert dismissible onClose={() => setRevealAlert(false)} reveal={revealAlert} variant='danger'>
+      <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
         Signup failed!
       </Alert>
       <Form.Group>
@@ -100,7 +100,7 @@ const SignupForm = () => {
           variant='success'>
           Submit
         </Button>
-        {error && <div>Sign up failed</div>}
+        {error && <div>Sign-up failed!</div>}
       </Form>
     </>
   );
