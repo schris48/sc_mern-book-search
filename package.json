@@ -21,6 +21,8 @@
     "escape-string-regexp": "^1.0.5",
     "find-up": "^3.0.0",
     "get-caller-file": "^2.0.5",
+    "gql": "^1.1.2",
+    "graphql": "^14.7.0",
     "has-flag": "^3.0.0",
     "hosted-git-info": "^2.8.9",
     "is-arrayish": "^0.2.1",

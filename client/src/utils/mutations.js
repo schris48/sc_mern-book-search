@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-export const ADD_USER = graphql`
+export const ADD_USER = gql`
   mutation createUser($username: String!, $email: String!, $password: String!) {
     createUser(username: $username, email: $email, password: $password) {
       token
@@ -22,7 +22,7 @@ export const ADD_USER = graphql`
   }
 `;
 
-export const LOGIN_USER = graphql`
+export const LOGIN_USER = gql`
   mutation login($email: String!, $password: String!) {
     login(email: $email, password: $password) {
       token
@@ -45,7 +45,7 @@ export const LOGIN_USER = graphql`
   }
 `;
 
-export const SAVE_BOOK = graphql`
+export const SAVE_BOOK = gql`
   mutation saveBook($input: bookInput!) {
     saveBook(input: $input) {
       _id
@@ -63,7 +63,7 @@ export const SAVE_BOOK = graphql`
   }
 `;
 
-export const DELETE_BOOK = graphql`
+export const DELETE_BOOK = gql`
   mutation deleteBook($bookId: String!) {
     deleteBook(bookId: $bookId) {
       _id
