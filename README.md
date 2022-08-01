@@ -1,7 +1,7 @@
 # SC's MERN Book Search Engine
 
   ## Description
-  Search and save books!
+  Search and save books! This app runs on https://localstorage:3001
 
   ## Table of Contents
   - [Installation](#installation)
@@ -12,9 +12,10 @@
   - [Questions](#questions)
 
   ## Installation
-  1. Git clone repository to local storage.
-  2. ```install npm``` on both client and server directories.
-  3. Run ```npm start```.
+
+  2. Git clone repository to local storage.
+  3. ```install npm``` on both client and server directories.
+  4. Run ```npm start```.
 
   ## Usage
   Search for books, view and save results!
