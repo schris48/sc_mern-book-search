@@ -1,4 +1,4 @@
-const typeDefs = require('./typeDefs');
+const typeDefinitions = require('./typeDefinitions');
 const resolvers = require('./resolvers');
 
-modeule.exports = { typeDefs, resolvers };
+modeule.exports = { typeDefinitions, resolvers };
